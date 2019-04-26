@@ -37,9 +37,7 @@ const Helmet = ({ theme = {} }) => (
           <meta charSet="utf-8" />
           <title>{title}</title>
           <meta name="description" content={description} />
-          <link rel="icon" href="./Logo/favicon.ico" />
-	
-          <link rel="shortcut icon" href={`./Logo/favicon-16x16.png}`} />
+          <link rel="shortcut icon" href={`https:${profile.favicon32.src}`} />
           <meta name="theme-color" content={theme.background} />
           <meta name="image" content={`https:${profile.favicon32.src}`} />
 
