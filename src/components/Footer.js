@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text, Flex, Box } from 'rebass';
+import { Text, Box } from 'rebass';
 import Fade from 'react-reveal/Fade';
 import PropTypes from 'prop-types';
 // import ContentfulLogo from './Logo/Contenful.svg';
@@ -54,7 +54,7 @@ const Footer = () => (
             display: 'table',
           }}
         >
-         Jonathan Biro Development
+          Jonathan Biro Development ©
         </Text>
       </span>
       {/* <Flex justifyContent="center" alignItems="center">

@@ -9,7 +9,7 @@ import { CardContainer, Card } from '../components/Card';
 import SocialLink from '../components/SocialLink';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
-import Hide from '../components/Hide';
+// import Hide from '../components/Hide';
 
 const Background = () => (
   <div>
@@ -109,7 +109,7 @@ const Project = ({
   projectUrl,
   repositoryUrl,
   type,
-  publishedDate,
+  youtubeUrl,
   logo,
 }) => (
   <Card p={0}>
@@ -137,7 +137,7 @@ const Project = ({
               <SocialLink
                 name="Project Demonstration"
                 fontAwesomeIcon="youtube"
-                url={repositoryUrl}
+                url={youtubeUrl}
               />
             </Box>
             <Box mx={1} fontSize={5}>
@@ -178,6 +178,7 @@ Project.propTypes = {
   description: PropTypes.string.isRequired,
   projectUrl: PropTypes.string.isRequired,
   repositoryUrl: PropTypes.string.isRequired,
+  youtubeUrl: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   publishedDate: PropTypes.string.isRequired,
   logo: PropTypes.shape({
@@ -200,6 +201,7 @@ const Projects = () => (
               description
               projectUrl
               repositoryUrl
+              youtubeUrl
               publishedDate(formatString: "YYYY")
               type
               logo {
