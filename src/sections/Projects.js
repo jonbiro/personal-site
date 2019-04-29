@@ -135,14 +135,21 @@ const Project = ({
           >
             <Box mx={1} fontSize={5}>
               <SocialLink
-                name="Check repository"
+                name="Project Demonstration"
+                fontAwesomeIcon="youtube"
+                url={repositoryUrl}
+              />
+            </Box>
+            <Box mx={1} fontSize={5}>
+              <SocialLink
+                name="Project Repository (Code)"
                 fontAwesomeIcon="github"
                 url={repositoryUrl}
               />
             </Box>
             <Box mx={1} fontSize={5}>
               <SocialLink
-                name="See project"
+                name="See Project Live"
                 fontAwesomeIcon="globe"
                 url={projectUrl}
               />
@@ -157,9 +164,9 @@ const Project = ({
           >
             {type}
           </ImageSubtitle>
-          <Hide query={MEDIA_QUERY_SMALL}>
-            <ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>
-          </Hide>
+          {/*<Hide query={MEDIA_QUERY_SMALL}>*/}
+          {/*  <ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>*/}
+          {/*</Hide>*/}
         </ProjectTag>
       </ImageContainer>
     </Flex>
