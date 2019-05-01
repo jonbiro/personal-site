@@ -102,11 +102,6 @@ const Writing = () => (
   <StaticQuery
     query={graphql`
       query MediumPostQuery {
-        isMediumUserDefine: __type(
-          name: "contentfulAboutMediumUserQueryString_2"
-        ) {
-          name
-        }
         allMediumPost(limit: 6, sort: { fields: createdAt, order: DESC }) {
           edges {
             node {
@@ -132,18 +127,16 @@ const Writing = () => (
     render={({ allMediumPost, isMediumUserDefine }) => {
       const posts = edgeToArray(allMediumPost).map(parsePost);
       return (
-        isMediumUserDefine && (
-          <Section.Container id="writing" Background={Background}>
-            <Section.Header name="Writing" icon="✍️" label="writing" />
-            <CardContainer minWidth="300px">
-              {posts.map(p => (
-                <Fade bottom>
-                  <Post key={p.id} {...p} />
-                </Fade>
-              ))}
-            </CardContainer>
-          </Section.Container>
-        )
+        <Section.Container id="writing" Background={Background}>
+          <Section.Header name="Writing" icon="✍️" label="writing" />
+          <CardContainer minWidth="300px">
+            {posts.map(p => (
+              <Fade bottom>
+                <Post key={p.id} {...p} />
+              </Fade>
+            ))}
+          </CardContainer>
+        </Section.Container>
       );
     }}
   />
