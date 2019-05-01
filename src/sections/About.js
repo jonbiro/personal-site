@@ -10,12 +10,12 @@ import markdownRenderer from '../components/MarkdownRenderer';
 
 const Background = () => (
   <div>
-    <Triangle
-      color="secondaryLight"
-      height={['50vh', '20vh']}
-      width={['50vw', '50vw']}
-      invertY
-    />
+    {/*<Triangle*/}
+    {/*  color="secondaryLight"*/}
+    {/*  height={['50vh', '20vh']}*/}
+    {/*  width={['50vw', '50vw']}*/}
+    {/*  invertY*/}
+    {/*/>*/}
 
     <Triangle
       color="primaryDark"
