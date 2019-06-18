@@ -73,3 +73,5 @@ netlify.toml
 # mac FS
 .DS_Store
 working npm/package.json
+/working npm/package copy 2.json
+/working npm/package copy.json
