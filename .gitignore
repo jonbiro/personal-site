@@ -36,6 +36,8 @@ build/Release
 node_modules/
 jspm_packages/
 .idea/
+/working npm
+.cache
 
 # TypeScript v1 declaration files
 typings/
@@ -70,3 +72,4 @@ netlify.toml
 
 # mac FS
 .DS_Store
+working npm/package.json
