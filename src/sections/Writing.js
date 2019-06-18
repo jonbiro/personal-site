@@ -57,7 +57,7 @@ const Post = ({ title, text, image, url, date, time }) => (
     {image && <CoverImage src={image} height="200px" alt={title} />}
     <Text m={3}>{text}</Text>
     <ImageSubtitle bg="primaryLight" color="white" x="right" y="bottom" round>
-      {`${date} - ${Math.ceil(time)} min`}
+      {`${date}`}
     </ImageSubtitle>
   </Card>
 );
