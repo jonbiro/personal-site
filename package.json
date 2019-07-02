@@ -4,8 +4,8 @@
   "description": "Jonathan Biro Portfolio",
   "main": "index.js",
   "scripts": {
-    "build": "cleandir ./.cache && gatsby build",
-    "develop": "cleandir ./.cache && gatsby develop",
+    "build": "gatsby clean && gatsby build",
+	  "develop": "gatsby clean && gatsby develop",
     "start": "npm run develop",
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js"
