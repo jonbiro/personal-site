@@ -33,7 +33,7 @@ const Helmet = ({ theme = {} }) => (
       const title = `${name} Web Developer | Software Engineer | Full-Stack`;
 
       return (
-        <ReactHelmet>
+        <ReactHelmet htmlAttributes={{ lang: 'en' }}>
           <meta charSet="utf-8" />
           <title>{title}</title>
           <meta name="description" content={description} />
@@ -85,6 +85,7 @@ const Helmet = ({ theme = {} }) => (
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossOrigin="anonymous"
           />
+          <script src="https://use.fontawesome.com/fd58d214b9.js" />
         </ReactHelmet>
       );
     }}
