@@ -56,8 +56,6 @@ const LandingPage = () => (
               fontAwesomeIcon
             }
           }
-          site {
-          }
         }
       `}
       render={({ contentfulAbout, site }) => {
@@ -85,7 +83,7 @@ const LandingPage = () => (
             >
               <TextLoop interval={5000}>
                 {roles
-                  .sort(() =>  Math.random() - 0.5)
+                  .sort(() => Math.random() - 0.5)
                   .map(text => (
                     <Text width={[300, 500]} key={text}>
                       {text}
