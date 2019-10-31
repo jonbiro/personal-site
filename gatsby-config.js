@@ -14,6 +14,14 @@ const getAboutEntry = entry => entry.sys.contentType.sys.id === 'about';
 const plugins = [
   'gatsby-plugin-react-helmet',
   {
+    resolve: 'gatsby-plugin-web-font-loader',
+    options: {
+      google: {
+        families: ['Cabin', 'Open Sans'],
+      },
+    },
+  },
+  {
     resolve: 'gatsby-plugin-manifest',
     options: manifestConfig,
   },
@@ -32,8 +40,7 @@ const plugins = [
     },
   },
   'gatsby-transformer-remark',
-  // 'gatsby-plugin-offline',
-  `gatsby-plugin-remove-serviceworker`,
+  'gatsby-plugin-offline',
 ];
 
 module.exports = client.getEntries().then(entries => {
@@ -58,6 +65,7 @@ module.exports = client.getEntries().then(entries => {
   return {
     siteMetadata: {
       isMediumUserDefined: !!mediumUser,
+      deterministicBehaviour: !!DETERMINISTIC,
     },
     plugins,
   };

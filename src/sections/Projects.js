@@ -9,7 +9,7 @@ import { CardContainer, Card } from '../components/Card';
 import SocialLink from '../components/SocialLink';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
-// import Hide from '../components/Hide';
+import Hide from '../components/Hide';
 
 const Background = () => (
   <div>
@@ -185,12 +185,13 @@ Project.propTypes = {
     image: PropTypes.shape({
       src: PropTypes.string,
     }),
+    title: PropTypes.string,
   }).isRequired,
 };
 
 const Projects = () => (
   <Section.Container id="projects" Background={Background}>
-    <Section.Header name="Projects" icon="💻" Box="notebook" />
+    <Section.Header name="Projects" icon="💻" label="notebook" />
     <StaticQuery
       query={graphql`
         query ProjectsQuery {
@@ -217,8 +218,8 @@ const Projects = () => (
       render={({ contentfulAbout }) => (
         <CardContainer minWidth="350px">
           {contentfulAbout.projects.map((p, i) => (
-            <Fade bottom delay={i * 200}>
-              <Project key={p.id} {...p} />
+            <Fade bottom delay={i * 200} key={p.id}>
+              <Project {...p} />
             </Fade>
           ))}
         </CardContainer>
