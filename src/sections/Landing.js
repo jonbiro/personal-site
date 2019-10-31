@@ -58,9 +58,8 @@ const LandingPage = () => (
           }
         }
       `}
-      render={({ contentfulAbout, site }) => {
-        const { name, socialLinks, roles } = contentfulAbout;
-
+      render={data => {
+        const { name, socialLinks, roles } = data.contentfulAbout;
         return (
           <Fragment>
             <Heading
