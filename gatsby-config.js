@@ -65,7 +65,6 @@ module.exports = client.getEntries().then(entries => {
   return {
     siteMetadata: {
       isMediumUserDefined: !!mediumUser,
-      deterministicBehaviour: !!DETERMINISTIC,
     },
     plugins,
   };
