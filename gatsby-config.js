@@ -27,12 +27,6 @@ const plugins = [
   },
   'gatsby-plugin-styled-components',
   {
-    resolve: 'gatsby-plugin-google-fonts',
-    options: {
-      fonts: ['cabin', 'Open Sans'],
-    },
-  },
-  {
     resolve: 'gatsby-source-contentful',
     options: {
       spaceId: SPACE_ID,
