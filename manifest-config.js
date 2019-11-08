@@ -1,7 +1,7 @@
 const colors = require('./colors');
 
 module.exports = {
-  name: 'Jonathan Biro FullStack Engineer',
+  name: 'Jonathan Biro FullStack & Automation Engineer',
   short_name: 'Jonathan Biro',
   start_url: '/',
   background_color: colors.background,
