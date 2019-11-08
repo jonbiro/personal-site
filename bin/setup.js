@@ -65,7 +65,11 @@ inquirer
   .then(() => {
     console.log(
       `All set! You can now run ${chalk.yellow(
+<<<<<<< HEAD
         'yarn develop',
+=======
+        'npm run develop',
+>>>>>>> 8a2356aa1002b5252d93e3172c56ab1b4f071ee0
       )} to see it in action.`,
     );
   })
