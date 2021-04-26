@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "description": "Jonathan Biro Portfolio",
   "main": "index.js",
-  
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",
@@ -17,12 +16,9 @@
   "keywords": [
     "gatsby",
     "biro",
-    "contentful",
-    "PWA",
     "portfolio"
   ],
   "author": "Jonathan Biro",
-
   "homepage": "https://github.com/jonbiro",
   "dependencies": {
     "dotenv": "^8.2.0",
