@@ -35,9 +35,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-.idea/
-/working npm
-.cache
 
 # TypeScript v1 declaration files
 typings/
@@ -51,12 +48,8 @@ typings/
 # Optional REPL history
 .node_repl_history
 
-# Output of 'npm pack'
-*.tgz
-
 # Yarn Integrity file
 .yarn-integrity
-.idea
 
 # dotenv environment variables file
 .env
@@ -72,6 +65,4 @@ netlify.toml
 
 # mac FS
 .DS_Store
-working npm/package.json
-/working npm/package copy 2.json
-/working npm/package copy.json
+.vscode/
